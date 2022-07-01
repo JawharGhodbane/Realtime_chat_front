@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { allUsersRoute, host } from "../utils/APIRoutes";
 import Contacts from "../components/Contacts";
-/*import ChatContainer from "../components/ChatContainer";
-import Welcome from "../components/Welcome";*/
+import Welcome from "../components/Welcome";
+/*import ChatContainer from "../components/ChatContainer";*/
 
 export default function Chat() {
   const navigate = useNavigate();
@@ -47,7 +47,13 @@ export default function Chat() {
     <>
       <Container>
         <div className="container">
-          <Contacts contacts={contacts} currentUser={currentUser} changeChat={handleChatChange}/>
+          <Contacts 
+          contacts={contacts}
+          currentUser={currentUser}
+          changeChat={handleChatChange}/>
+
+          <Welcome/>
+
         </div>
       </Container>
     </>
