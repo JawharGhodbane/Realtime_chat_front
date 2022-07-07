@@ -13,7 +13,7 @@ export default function Welcome() {
   setName()}, []);
   return (
     <Container>
-      <img src={Robot} alt="" />
+      <img src={Robot} alt="robot" />
       <h1>
         Welcome, <span>{userName}!</span>
       </h1>
